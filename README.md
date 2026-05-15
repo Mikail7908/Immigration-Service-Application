@@ -91,7 +91,7 @@ Two distinct streams:
 | File | Purpose | Format |
 |---|---|---|
 | `logs/app.log` | operational log (service-level events, correlation IDs, validation outcomes) | JSON (via `python-json-logger`) or plain text fallback |
-| `logs/audit.jsonl` | append-only audit trail (share code generation, verification attempts, validation failures) — one JSON object per line | JSONL |
+| `logs/audit.jsonl` | append-only audit trail (share code generation, verification attempts, validation failures) - one JSON object per line | JSONL |
 
 The audit trail is intentionally separate from the operational log so that the
 audit history is not affected by operational log rotation or formatting changes.
