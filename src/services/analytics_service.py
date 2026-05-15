@@ -3,13 +3,7 @@ from typing import Dict, Any
 from ..repository.audit_repository import AuditRepository
 
 class AnalyticsService:
-    """Produces aggregated oversight from the audit log, free of personal information.
-    Intentional design constraint: this service NEVER returns individual-level
-    identifiers (individual_id, share code values, passport numbers, DOBs). It
-    aggregates only over coarse fields such as organisation_id, role, declared
-    purpose, and date. This keeps the analytics surface consistent with privacy
-    obligations even when consumed by less-trusted operational dashboards.
-    """
+    """Produces aggregated oversight from the audit log, free of personal information"""
 
     def __init__(self, audit: AuditRepository):
         self.audit = audit

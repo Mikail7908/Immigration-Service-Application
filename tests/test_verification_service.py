@@ -2,8 +2,7 @@
 
 These tests exercise each decision branch in verify() / _verify_share_code() /
 _verify_document() / _project_outcome() - covering both happy paths and every
-documented failure path. Identical inputs must yield identical outputs, so each
-test reuses the same fixture-driven setup.
+documented failure path
 """
 from datetime import datetime, timedelta, timezone
 from src.domain.enums import VerificationRoute, OutcomeStatus

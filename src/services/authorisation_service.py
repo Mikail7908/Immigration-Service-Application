@@ -4,12 +4,7 @@ from ..repository.file_repository import FileRepository
 from ..validation.validators import validate_email_format, validate_email_domain, validate_confirmations, ValidationResult
 
 class AuthorisationService:
-    """Determines whether a requesting organisation is allowed to call the service.
-    Authorisation is intentionally separate from input validation: the design
-    distinguishes "do we trust the caller?" from "is the caller's payload well
-    formed?". This lets the audit trail report unauthorised attempts independently
-    of malformed-input failures.
-    """
+    """Determines whether a requesting organisation is allowed to call the service"""
 
     def __init__(self, repo: FileRepository):
         self.repo = repo

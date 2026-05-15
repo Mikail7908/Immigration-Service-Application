@@ -6,11 +6,7 @@ from typing import List, Optional
 from ..domain.models import Individual, ShareCode, Organisation
 
 class FileRepository:
-    """JSON file-based persistence for individuals, organisations, share codes.
-    A single lock serialises writes to avoid interleaved persistence when the CLI
-    triggers multiple service calls within one session. This keeps the prototype
-    deterministic: identical inputs produce identical persisted state.
-    """
+    """JSON file-based persistence for individuals, organisations, share codes"""
 
     def __init__(self, data_dir: str):
         self.data_dir = Path(data_dir)

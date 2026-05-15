@@ -2,7 +2,7 @@
 
 Confirms aggregation correctness AND the privacy constraint: no personal
 information (individual_id, share code, passport, DOB) ever appears in the
-analytics summary, regardless of what is in the audit log.
+analytics summary, regardless of what is in the audit log
 """
 import json
 from src.domain.enums import VerificationRoute, OutcomeStatus

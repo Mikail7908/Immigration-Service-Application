@@ -29,8 +29,8 @@ observability and audit traceability.
 
 - Python 3.9+
 - See `requirements.txt`:
-  - `pytest` — test runner
-  - `python-json-logger` — JSON-formatted file logs (the app degrades gracefully
+  - `pytest` - test runner
+  - `python-json-logger` - JSON-formatted file logs (the app degrades gracefully
     to plain text if it isn't installed)
 
 ## Setup
@@ -72,7 +72,7 @@ You'll see a menu:
    - confirm all three confirmations (y/y/y)
 4. Try the same code with a wrong DOB → `IDENTITY_MISMATCH`.
 5. Try a wrong organisation ID → `UNAUTHORISED`.
-6. Choose **3** to verify by passport — use role `BORDER_CONTROL`, organisation
+6. Choose **3** to verify by passport - use role `BORDER_CONTROL`, organisation
    `ORG-BDR-01`, email `officer@borderforce.gov.uk`, passport `P1234567A`.
 7. Choose **4** to view aggregated analytics (no personal information in this view).
 
@@ -112,5 +112,5 @@ tail -f logs/audit.jsonl
 - Identical inputs deterministically produce identical outcomes (verified by
   `tests/test_verification_service.py::test_determinism_same_input_same_outcome`).
 - Outcomes are role-scoped: an employer receives only right-to-work fields, a
-  landlord only right-to-rent fields, etc. — verified by tests.
+  landlord only right-to-rent fields, etc. - verified by tests.
 - Analytics output is guaranteed free of personal information by design and by an explicit test.

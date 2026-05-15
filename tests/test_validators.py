@@ -3,7 +3,7 @@
 Intent: each validator contains multiple decision branches (missing input, format
 mismatch, semantic mismatch). These tests cover every branch - both the success
 path and each documented failure path - so that adding a new branch later forces
-a deliberate test update.
+a deliberate test update
 """
 from datetime import datetime, timedelta, timezone
 import pytest

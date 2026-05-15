@@ -5,11 +5,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 
 class AuditRepository:
-    """Append-only audit trail written as JSONL.
-    Each line is a self-contained JSON object. Append-only writes make the trail
-    easier to defend as tamper-evident: history is never rewritten by service code.
-    Personal data is minimised: only identifiers and outcome metadata are recorded.
-    """
+    """Append-only audit trail written as JSONL"""
 
     def __init__(self, audit_path: str):
         self.path = Path(audit_path)
