@@ -1,0 +1,58 @@
+[
+  {
+    "individual_id": "IND-0001",
+    "full_name": "Amelia Hart",
+    "date_of_birth": "1990-04-12",
+    "passport_number": "P1234567A",
+    "permit_number": "PA1234567",
+    "status_type": "SETTLED",
+    "status_valid_until": null,
+    "right_to_work": true,
+    "right_to_rent": true,
+    "right_to_study": true,
+    "entry_permitted": true,
+    "conditions": []
+  },
+  {
+    "individual_id": "IND-0002",
+    "full_name": "Noah Bennett",
+    "date_of_birth": "1995-09-30",
+    "passport_number": "K9876543B",
+    "permit_number": "PB7654321",
+    "status_type": "LIMITED_LEAVE",
+    "status_valid_until": "2027-03-31",
+    "right_to_work": true,
+    "right_to_rent": true,
+    "right_to_study": false,
+    "entry_permitted": true,
+    "conditions": ["max 20 hours per week during term-time"]
+  },
+  {
+    "individual_id": "IND-0003",
+    "full_name": "Priya Shah",
+    "date_of_birth": "2002-01-15",
+    "passport_number": "M5550001D",
+    "permit_number": "PC0000123",
+    "status_type": "STUDENT_VISA",
+    "status_valid_until": "2026-09-30",
+    "right_to_work": false,
+    "right_to_rent": true,
+    "right_to_study": true,
+    "entry_permitted": true,
+    "conditions": ["work-study restricted"]
+  },
+  {
+    "individual_id": "IND-0004",
+    "full_name": "Tomasz Kowalski",
+    "date_of_birth": "1988-07-22",
+    "passport_number": "Z1112223C",
+    "permit_number": null,
+    "status_type": "EXPIRED_LEAVE",
+    "status_valid_until": "2025-12-01",
+    "right_to_work": false,
+    "right_to_rent": false,
+    "right_to_study": false,
+    "entry_permitted": false,
+    "conditions": []
+  }
+]

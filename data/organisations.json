@@ -1,0 +1,44 @@
+[
+  {
+    "organisation_id": "ORG-EMP-01",
+    "name": "Acme Logistics Ltd",
+    "role": "EMPLOYER",
+    "email_domain": "acme.co.uk",
+    "authorised": true
+  },
+  {
+    "organisation_id": "ORG-LND-01",
+    "name": "Riverside Lettings",
+    "role": "LANDLORD",
+    "email_domain": "riverside-lettings.com",
+    "authorised": true
+  },
+  {
+    "organisation_id": "ORG-EDU-01",
+    "name": "Northbridge College",
+    "role": "EDUCATION",
+    "email_domain": "northbridge.ac.uk",
+    "authorised": true
+  },
+  {
+    "organisation_id": "ORG-BDR-01",
+    "name": "UK Border Force",
+    "role": "BORDER_CONTROL",
+    "email_domain": "borderforce.gov.uk",
+    "authorised": true
+  },
+  {
+    "organisation_id": "ORG-LAW-01",
+    "name": "Metropolitan Police",
+    "role": "LAW_ENFORCEMENT",
+    "email_domain": "met.police.uk",
+    "authorised": true
+  },
+  {
+    "organisation_id": "ORG-EMP-99",
+    "name": "Suspended Recruiters Inc",
+    "role": "EMPLOYER",
+    "email_domain": "suspended-recruiters.com",
+    "authorised": false
+  }
+]
