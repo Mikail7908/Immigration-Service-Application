@@ -1,4 +1,4 @@
-# Immigration Verification Service — Prototype
+# Immigration Verification Service - Prototype
 
 A console-based prototype of a controlled immigration status verification
 service. Authorised organisations (employers, landlords, education providers)
