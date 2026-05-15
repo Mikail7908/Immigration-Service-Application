@@ -13,7 +13,7 @@ one test that exercises it.
 | `test_share_code_service.py` | `src/services/share_code_service.py` | happy path, unknown purpose branch, unknown individual branch, audit-record side effect, revoke-existing, revoke-missing |
 | `test_authorisation_service.py` | `src/services/authorisation_service.py` | success + each of the 6 documented rejection branches (confirmations, email format, unknown org, unauthorised org, role mismatch, domain mismatch) |
 | `test_verification_service.py` | `src/services/verification_service.py` | full happy paths for both routes and all five roles; every failure branch in `verify()`, `_verify_share_code()`, `_verify_document()`; role-scoped projection correctness (employer outcome must not leak entry/status data); deterministic outcome stability |
-| `test_analytics_service.py` | `src/services/analytics_service.py` | aggregation correctness, failure counting, **privacy invariant** (no personal information — individual identifier, share code, or DOB — ever appears in summary output), empty-state behaviour |
+| `test_analytics_service.py` | `src/services/analytics_service.py` | aggregation correctness, failure counting, **privacy invariant** (no personal information - individual identifier, share code, or DOB - ever appears in summary output), empty-state behaviour |
 
 ## Why these specific tests
 
